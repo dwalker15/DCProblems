@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,8 @@ namespace ArithmeticEvaluator
 		static void Main(string[] args)
 		{
 			string[] tree = new string[7] { "*", "+", "+", "3", "2", "4", "5"};
-            double result = Operate(tree);
+			double result = Operate(tree);
+            Debug.Assert(result == 45);
 
 		}
 
